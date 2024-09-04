@@ -12,7 +12,7 @@ export function sumOfNumbersInInterval(from, to) {
  */
 export function printMultOperation(a = 7) {
   const multipliers = Array.from({ length: 9 }, (value, index) => index + 1);
-  return multipliers.map((val) => `${a} x ${val} = ${a * val}`).join('\n');
+  return multipliers.map((val) => `${a} x ${val} = ${a * val}`).join("\n");
 }
 
 /** *Запросить у пользователя ввод числа N. Вывести в консоль среднее арифметическое всех нечётных чисел от 1 до N
