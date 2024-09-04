@@ -17,10 +17,10 @@ export default [
     // files: ["src/**/*.js"],
     // ignores: ["**/*.config.js", "!**/eslint.config.js"],
     ...jest.configs["flat/recommended"],
-    // rules: {
-    //   "no-unused-vars": "warn",
-    //   "no-undef": "error",
-    // },
+    rules: {
+      "no-unused-vars": "warn",
+      "no-undef": "error",
+    },
   },
   eslintConfigPrettier,
 ];
