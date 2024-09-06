@@ -4,9 +4,9 @@
  * @returns Название дня недели
  */
 export function printDayOfWeek() {
-  let errorMessage = "Введён неверный формат даты (ДД.ММ.ГГГГ)";
-  const inputText = prompt("Введите дату в формате ДД.ММ.ГГГГ").trim();
-  const values = inputText.split(".");
+  let errorMessage = 'Ошибка. Введён неверный формат даты (ДД.ММ.ГГГГ)';
+  const inputText = prompt('Введите дату в формате ДД.ММ.ГГГГ').trim();
+  const values = inputText.split('.');
   if (values.length != 3) {
     return errorMessage;
   }
@@ -26,5 +26,5 @@ export function printDayOfWeek() {
  * @returns {string} - день недели
  */
 export function getDayOfWeek(date) {
-  return date.toLocaleDateString("ru-RU", { weekday: "long" });
+  return date.toLocaleDateString('ru-RU', { weekday: 'long' });
 }
