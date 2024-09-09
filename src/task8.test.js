@@ -37,7 +37,7 @@ describe("task8 function", () => {
     jest.spyOn(window, "prompt").mockReturnValue("77.09.2024");
     expect(printDayOfWeek()).toEqual(expect.stringContaining("Ошибка"));
     expect(printDayOfWeek()).toEqual(
-      expect.not.stringContaining("воскресенье")
+      expect.not.stringContaining("воскресенье"),
     );
   });
 
@@ -58,17 +58,17 @@ describe("task8 function", () => {
     expect(calcMinutesAfterMidnight(new Date(2024, 8, 6, 0, 0, 6))).toBe(0.1);
     expect(calcMinutesAfterMidnight(new Date(2024, 8, 6, 0, 0, 30))).toBe(0.5);
     expect(calcMinutesAfterMidnight(new Date(2024, 8, 6, 3, 3, 3))).toBe(
-      183.05
+      183.05,
     );
   });
 
   it("getLatestDateIndex returns index of youngest date element", () => {
     expect(getLatestDateIndex("23.05.2024", "12.06.2024")).toBe(1);
     expect(getLatestDateIndex("23.05.2024", "12.06.2024", "15.08.2025")).toBe(
-      2
+      2,
     );
     expect(getLatestDateIndex("12.03.2026", "01.06.2024", "15.08.2025")).toBe(
-      0
+      0,
     );
     expect(getLatestDateIndex("12.03.2026")).toBe(0);
   });

@@ -63,10 +63,10 @@ describe("quadratic equation solving function", () => {
   it("printQuadratiсEquationSolutions returns solutions of quadratic equation", () => {
     jest.spyOn(window, "prompt").mockReturnValue("1 5 6");
     expect(printQuadratiсEquationSolutions()).toEqual(
-      expect.stringContaining("-3")
+      expect.stringContaining("-3"),
     );
     expect(printQuadratiсEquationSolutions()).toEqual(
-      expect.stringContaining("-2")
+      expect.stringContaining("-2"),
     );
   });
 });

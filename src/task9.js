@@ -55,7 +55,7 @@ export const getCircleArea = (radius) => Math.PI * radius ** 2;
 export function printQuadratiсEquationSolutions() {
   const inputText = prompt(
     "Введите коэффициенты а, b и с квадратного уравнения через пробел или запятую",
-    "1, -2, 1"
+    "1, -2, 1",
   );
   let resultMessage;
   const coeffs = inputText.split(/[\s,;]/);

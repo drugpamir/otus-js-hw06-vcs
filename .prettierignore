@@ -1,0 +1,7 @@
+build
+coverage
+
+**/*.html
+**/node_modules
+**/.git
+**/.gitignore

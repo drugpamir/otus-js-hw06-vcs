@@ -67,7 +67,7 @@ export function calcMinutesAfterMidnight(dateTime = new Date()) {
   const date = new Date(
     dateTime.getFullYear(),
     dateTime.getMonth(),
-    dateTime.getDate()
+    dateTime.getDate(),
   );
   const totalMinutes = (dateTime - date) / 1000 / 60;
   return totalMinutes;
