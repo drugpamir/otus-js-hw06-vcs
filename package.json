@@ -1,7 +1,7 @@
 {
   "name": "otus-js-hw06-vcs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "jest",
     "lint": "prettier --check . && eslint .",
@@ -9,9 +9,9 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anatoly",
   "license": "ISC",
-  "description": "",
+  "description": "Training of npm project creation with tests, linters, hooks etc",
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
