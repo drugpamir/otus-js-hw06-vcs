@@ -9,6 +9,14 @@ describe("getMaxValue function", () => {
 });
 
 describe("monthName functions", () => {
+  let originalFunc;
+  beforeEach(() => {
+    originalFunc = window.prompt;
+  });
+  afterEach(() => {
+    window.prompt = originalFunc;
+  });
+
   it("returns month name for numbers 1...12", () => {
     expect(getMonthName(1)).toBe("январь");
     expect(getMonthName(12)).toBe("декабрь");
@@ -17,14 +25,6 @@ describe("monthName functions", () => {
   it("returns undefined for other numbers", () => {
     expect(getMonthName(0)).toBe(undefined);
     expect(getMonthName(13)).toBe(undefined);
-  });
-
-  let originalFunc;
-  beforeEach(() => {
-    originalFunc = window.prompt;
-  });
-  afterEach(() => {
-    window.prompt = originalFunc;
   });
 
   it("returns month name for correct user input", () => {
