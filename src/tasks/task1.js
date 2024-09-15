@@ -6,7 +6,6 @@
  * @returns {string} Строка с произведением и суммой введённых чисел
  */
 export const calcSumAndMult = (a, b) => `a * b = ${a * b}\na + b = ${a + b}`;
-console.log(calcSumAndMult(3, 4));
 
 /** 2.В двух переменных хранятся строки символов.
  * Написать программу, которая выведет в консоль
@@ -16,7 +15,6 @@ console.log(calcSumAndMult(3, 4));
  * @returns {number} Суммарная длина строк
  */
 export const getTotalLength = (s1, s2) => s1.length + s2.length;
-console.log("строка", "ещё строка");
 
 /** 3.*Написать программу, которая запрашивает у
  * пользователя ввод трёхзначного числа, а потом

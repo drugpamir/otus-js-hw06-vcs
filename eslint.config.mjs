@@ -14,8 +14,6 @@ export default [
   },
   pluginJs.configs.recommended,
   {
-    // files: ["src/**/*.js"],
-    // ignores: ["**/*.config.js", "!**/eslint.config.js"],
     ...jest.configs["flat/recommended"],
     rules: {
       "no-unused-vars": "warn",
