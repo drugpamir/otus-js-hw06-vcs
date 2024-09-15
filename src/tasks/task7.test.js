@@ -1,8 +1,8 @@
 import {
   runApp,
-  CLS_INPUT_ELM,
-  CLS_BTN_SUBMIT,
-  CLS_P_CONTAINER,
+  CLASS_INPUT_ELEMENT,
+  CLASS_BUTTON_SUBMIT,
+  CLASS_P_CONTAINER,
   P_TAG,
 } from "./task7";
 
@@ -12,9 +12,9 @@ describe("Task 7 form", () => {
   beforeEach(() => {
     appElm = document.createElement("div");
     runApp(appElm);
-    inputElm = appElm.getElementsByClassName(CLS_INPUT_ELM)[0];
-    btnSubmit = appElm.getElementsByClassName(CLS_BTN_SUBMIT)[0];
-    pContainer = appElm.getElementsByClassName(CLS_P_CONTAINER)[0];
+    inputElm = appElm.getElementsByClassName(CLASS_INPUT_ELEMENT)[0];
+    btnSubmit = appElm.getElementsByClassName(CLASS_BUTTON_SUBMIT)[0];
+    pContainer = appElm.getElementsByClassName(CLASS_P_CONTAINER)[0];
   });
 
   const hasInputElm = () => !!inputElm;

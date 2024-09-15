@@ -1,6 +1,6 @@
-export const CLS_INPUT_ELM = "pTextInput";
-export const CLS_BTN_SUBMIT = "btnSubmit";
-export const CLS_P_CONTAINER = "pContainer";
+export const CLASS_INPUT_ELEMENT = "pTextInput";
+export const CLASS_BUTTON_SUBMIT = "btnSubmit";
+export const CLASS_P_CONTAINER = "pContainer";
 export const P_TAG = "p";
 
 /**
@@ -9,21 +9,21 @@ export const P_TAG = "p";
  */
 export function runApp(app) {
   app.innerHTML = `
-    <input class="${CLS_INPUT_ELM}" autofocus type="text" required placeholder="Новый элемент" />
-    <button class="${CLS_BTN_SUBMIT}" hidden type="submit">Добавить параграф</button>
-    <div class="${CLS_P_CONTAINER}"></div>
+    <input class="${CLASS_INPUT_ELEMENT}" autofocus type="text" required placeholder="Новый элемент" />
+    <button class="${CLASS_BUTTON_SUBMIT}" hidden type="submit">Добавить параграф</button>
+    <div class="${CLASS_P_CONTAINER}"></div>
   `;
 
   // const input = app.querySelector('.' + CLS_INPUT_ELM);
-  const input = app.getElementsByClassName(CLS_INPUT_ELM)[0];
+  const input = app.getElementsByClassName(CLASS_INPUT_ELEMENT)[0];
   input.addEventListener("input", (ev) => {
     const text = ev.target.value.trim();
     addButton.hidden = text.length === 0;
   });
 
-  const pContainer = app.getElementsByClassName(CLS_P_CONTAINER)[0];
+  const pContainer = app.getElementsByClassName(CLASS_P_CONTAINER)[0];
 
-  const addButton = app.getElementsByClassName(CLS_BTN_SUBMIT)[0];
+  const addButton = app.getElementsByClassName(CLASS_BUTTON_SUBMIT)[0];
   addButton.addEventListener("click", (ev) => {
     const pText = input.value.trim();
     if (!pText) return;
